@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Group14_FinalProject
+namespace FinalProject_Group14
 {
 
 

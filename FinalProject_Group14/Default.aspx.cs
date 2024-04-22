@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Group14_FinalProject
+namespace FinalProject_Group14
 {
     public partial class Default : System.Web.UI.Page
     {
