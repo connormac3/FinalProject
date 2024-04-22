@@ -9,8 +9,26 @@ namespace FinalProject_Group14
 {
     public partial class LeetCodeHard : System.Web.UI.Page
     {
-        public class Solution
+        protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+
+        protected void btnCalculate_Click(object sender, EventArgs e)
+        {
+            // Parse input arrays
+            int[] nums1 = Array.ConvertAll(txtNums1.Text.Split(','), int.Parse);
+            int[] nums2 = Array.ConvertAll(txtNums2.Text.Split(','), int.Parse);
+
+            // Call the FindMedianSortedArrays method
+            double median = FindMedianSortedArrays(nums1, nums2);
+
+            // Display the result in the text box
+            txtResult.Text = $"Median of sorted arrays: {median}";
+        }
+
+        
+        
             public double FindMedianSortedArrays(int[] nums1, int[] nums2)
             {
                 var sizeA = nums1.Length;
@@ -26,6 +44,6 @@ namespace FinalProject_Group14
 
                 return isEven ? (union[center - 1] + union[center]) / 2D : union[center];
             }
-        }
     }
 }
+
