@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="FinalProject_Group14.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Group14_FinalProject.Default" %>
 
 <!DOCTYPE html>
 
@@ -9,11 +9,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Button ID="LeetCodeEasy" runat="server" Text="Easy Problem" OnClick="LeetCodeEasy"/>
-
-            <asp:Button ID="LeetCodeMedium" runat="server" Text="Medium Problem" OnClick="LeetCodeMedium"/>
-
-            <asp:Button ID="LeetCodeHard" runat="server" Text="Hard Problem" OnClick="LeetCodeHard"/>
+            <asp:Button ID="LeetCodeEasy" runat="server" Text="Easy Problem" OnClick="LeetCodeEasy_Click" />
+       </div>
+        <div>
+            <asp:Button ID="LeetCodeMedium" runat="server" Text="Medium Problem" OnClick="LeetCodeMedium_Click" />
+        </div>
+        <div>
+            <asp:Button ID="LeetCodeHard" runat="server" Text="Hard Problem" OnClick="LeetCodeHard_Click"/>
 
         </div>
     </form>
