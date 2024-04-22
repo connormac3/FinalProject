@@ -9,7 +9,8 @@
     <form id="form1" runat="server">
         <div>
             <h1>Median of Sorted Arrays</h1>
-            
+        </div>
+           
         <div>
             <h2>Find Median of Sorted Arrays</h2>
             <p>Enter values for nums1 (comma-separated):</p>
